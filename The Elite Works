@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor Lite | Professional Video Editor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #000, #1e90ff);
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .header-title {
+            font-size: 48px;
+            font-weight: bold;
+        }
+        .header-subtitle {
+            font-size: 28px;
+            margin-top: 5px;
+        }
+        .section {
+            padding: 80px 10%;
+            max-width: 1200px;
+            margin: 0 auto;
+            animation: slideUp 1s ease-in-out;
+            text-align: center;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .portfolio-item {
+            width: 48%;
+            text-align: center;
+            position: relative;
+        }
+        .portfolio-item .video-cover {
+            width: 100%;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+        }
+        .portfolio-item iframe {
+            width: 100%;
+            height: 250px;
+            border: none;
+            border-radius: 10px;
+            display: none;
+        }
+        .portfolio-item p {
+            margin-top: 10px;
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .contact a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .about ol {
+            text-align: left;
+            display: inline-block;
+            margin: 20px auto;
+            padding-left: 20px;
+            animation: fadeInList 1.5s ease-in-out;
+        }
+        .about ol li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        @keyframes fadeInList {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .icon {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: #1e90ff;
+            border-radius: 50%;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #fff;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+        }
+        .icon::before {
+            content: "▶";
+        }
+        .work-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .work-subtitle {
+            font-size: 24px;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+        .work-category {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-title">Editor Lite</div>
+        <div class="header-subtitle">Professional Video Editor</div>
+    </header>
+    
+    <section class="section about">
+        <h2>About Me</h2>
+        <ol>
+            <li>Expert in YouTube video editing</li>
+            <li>Proficient in TikTok content creation</li>
+            <li>Full customer support</li>
+            <li>Skilled worker on social media</li>
+            <li>Fast turnaround times with high-quality results</li>
+        </ol>
+    </section>
+    
+    <section class="section portfolio">
+        <section class="section about">
+    <h2>About Me</h2>
+    <ol>
+        <li>Click Image to See Videos </li>
+    </ol>
+</section>
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <div class="video-cover" style="background-image: url('YOUR_IMAGE_URL_1');" onclick="showVideo(this)"></div>
+                <iframe src="https://www.youtube.com/embed/VvqJ1yBO-aY"></iframe>
+                <p>Aggressive Shakes</p>
+            </div>
+            <div class="portfolio-item">
+                <div class="video-cover" style="background-image: url('YOUR_IMAGE_URL_2');" onclick="showVideo(this)"></div>
+                <iframe src="https://www.youtube.com/embed/XeluKvOrNAQ"></iframe>
+                <p>Smooth Transitions</p>
+            </div>
+            <div class="portfolio-item">
+                <div class="video-cover" style="background-image: url('YOUR_IMAGE_URL_3');" onclick="showVideo(this)"></div>
+                <iframe src="https://www.youtube.com/embed/HPe8Exl8x80"></iframe>
+                <p>Dynamic Effects</p>
+            </div>
+            <div class="portfolio-item">
+                <div class="video-cover" style="background-image: url('YOUR_IMAGE_URL_4');" onclick="showVideo(this)"></div>
+                <iframe src="https://www.youtube.com/embed/L5iWw2z48G4"></iframe>
+                <p>Creative Overlays</p>
+            </div>
+       
+    
+    <section class="section contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:rai.tanveer@gmail.com">rai.tanveer@gmail.com</a></p>
+        <p>Phone: <a href="tel:+923059894024">+923059894024</a></p>
+        <p>WhatsApp: <a href="https://wa.me/923059894024" target="_blank">Chat on WhatsApp</a></p>
+    </section>
+
+    <script>
+        function showVideo(element) {
+            element.style.display = 'none';
+            element.nextElementSibling.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
